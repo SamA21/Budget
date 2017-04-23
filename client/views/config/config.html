@@ -2,10 +2,17 @@
 <template name="Config">
   <div id="configWrapper">
       <h2>Set up the Budget forecast here</h2>
-      {{> FirstMonthValues }}
-      {{> IncomeConfig }}
-      {{> ExpensesConfig}}
+      <form class="budgetConfig">
+        {{> FirstMonthValues }}
+        {{> IncomeConfig }}
+        {{> ExpensesConfig}}
+        <input class="btn btn-default" type="submit" />
+      </form>
   </div>
+</template>
+
+<template name="budget">
+  <li>{{text}}</li>
 </template>
 
 <template name="FirstMonthValues">
