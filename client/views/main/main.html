@@ -1,0 +1,40 @@
+<template name="Main">
+  <div id="fullWrapper"> 
+    {{> TopHeader}}
+    {{#if currentUser }}
+      {{> SideMenu}}
+      {{> yield}} 
+    {{else}} 
+      {{> Content}}
+    {{/if}}
+    {{> Footer }}
+  </div>
+</template>
+
+<template name="Footer">
+  <div id="footerWrapper">
+  </div>
+</template>
+
+<template name="Content">
+  <div class="contentWrapper">
+    <h4>You need to register to use this App</h4>
+  </div>
+</template>
+
+<template name="SideMenu">
+    <div class="sideNav">
+      <ul class="nav nav-pills nav-stacked span2">
+        <li><a href="{{pathFor route='Config'}}">Config</a></li>
+        <li><a href="{{pathFor route='Budget'}}">Budget</a></li>
+      </ul>
+      <div class="bottom"></div>
+    </div> 
+</template>
+
+<template name="TopHeader">
+    <div class="heading">
+      <h3><a href="{{pathFor route='Home'}}">Budget</a></h3>
+      {{> loginButtons}}
+    </div> 
+</template>

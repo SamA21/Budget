@@ -1,0 +1,82 @@
+/* CSS declarations go here */
+#fullWrapper{
+    width: 100%;
+}
+
+
+#footerWrapper{
+    clear:both;
+}
+
+.sideNav{
+    width:200px;
+    height: 100%;
+    background-color: darkmagenta;
+    min-height: 100%;
+    float: left;
+}
+
+.sideNav a{
+    color:#FFF;
+}
+
+.sideNav a:hover,
+.sideNav a:focus,
+.sideNav a:active{
+    background-color: #AB274F!important;
+    border-radius: 0px;
+}
+
+.sideNav .bottom{
+    width:1px;
+    margin-top: 818px;
+}
+
+.contentWrapper{
+    padding: 10px;
+    height: 100%;
+    float: left;
+}
+
+.heading{
+    width: 100%;
+    height: 50px;
+    background-color: darkmagenta;
+}
+
+.heading h3{
+    display: inline-block;
+    line-height: 50px;
+    margin:0px;
+    padding:0px;
+    padding-left:20px;
+    color:#FFF;
+}
+
+.heading h3 a,
+.heading h3 a:visited,
+.heading h3 a:hover,
+.heading h3 a:focus{
+    color: #FFF;
+}
+
+#login-buttons{
+    float: right;
+}
+
+#login-sign-in-link,
+#login-name-link{
+    line-height: 50px;
+    color: #FFF;
+    padding-right: 20px;
+}
+
+#login-sign-in-link + #login-dropdown-list{
+    left:-170px;
+}
+
+#login-dropdown-list{
+    top:50px;
+    left:-70px;
+}
+
