@@ -1,6 +1,46 @@
 
 <template name="Config">
   <div id="configWrapper">
-      <h2>Set up the Budget here</h2>
+      <h2>Set up the Budget forecast here</h2>
+      {{> FirstMonthValues }}
+      {{> IncomeConfig }}
+      {{> ExpensesConfig}}
+  </div>
+</template>
+
+<template name="FirstMonthValues">
+  <div>
+    <label>Current Balance:</label>
+    <input class="form-control" type="text" value="0" name="CurrentBalance" id="CurrentBalance" />
+    <label>Current Savings:</label>
+    <input class="form-control" type="text" value="0" name="CurrentSavings" id="CurrentSavings" />
+    <label>Current Help 2 buy:</label>
+    <input class="form-control" type="text" value="0" name="Help2buy" id="Help2buy" />
+    <label>Current Credit Debt:</label>
+    <input class="form-control" type="text" value="0" name="CreditDebt" id="CreditDebt" />
+  </div>
+</template>
+
+<template name="IncomeConfig">
+  <div>
+    <label>Main Income:</label>
+    <input class="form-control" type="text" value="0" name="MainIncome" id="MainIncome" />
+    <label>Other Income:</label>
+    <input class="form-control" type="text" value="0" name="OtherIncome" id="OtherIncome" />
+  </div>
+</template>
+
+<template name="ExpensesConfig">
+  <div>
+    <label>Transport Costs:</label>
+    <input class="form-control" type="text" value="0" name="TransportCosts" id="TransportCosts" />
+    <label>Council Tax:</label>
+    <input class="form-control" type="text" value="0" name="CouncilTax" id="CouncilTax" />
+    <label>Rent:</label>
+    <input class="form-control" type="text" value="0" name="Rent" id="Rent" />
+    <label>Bills:</label>
+    <input class="form-control" type="text" value="0" name="Bills" id="Bills" />
+    <label>Debt Payments:</label>
+    <input class="form-control" type="text" value="0" name="DebtPayments" id="DebtPayments" />
   </div>
 </template>
